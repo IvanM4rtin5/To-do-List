@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escala de Plantão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<main>
+  /* coloquei um estilo especifico aqui, para alterar as cores da escala quando for gerada*/
+  <body style="background-color: rgb(43, 9, 235); color:white;">
+
+  <h2 style="text-align: center;">Escala de Plantão</h2>
+
+  <div style="text-align: center;">
+    <label for="dataInicio">Data de início do primeiro plantão:</label>
+      <input type="date" id="dataInicio">
+    <button onclick="gerarEscala()">Gerar Escala</button>
+</div>
+</main>
+
+
+<div id="escala"></div>
+
+<script>
+function gerarEscala() {
+  var dataInicio = new Date(document.getElementById("dataInicio").value);
+  var milisegundosDia = 24 * 60 * 60 * 1000; // quantidade de milisegundos em um dia
+
+  var hoje = new Date ();
+
+  var funcionarios = ["Leticia", "plantonista2", "plantonista3"];
+  
+  
+  var diasPlantao = 1;
+  var diasFolga = 2;
+  var diasTotal = 30;
+  
+  var escalaHTML = "<h3>Escala de Plantão:</h3><ul>";
+
+  
+  for (var i = 0; i < diasTotal; i++) {
+   var funcionarioAtual = i % funcionarios.length; {
+    escalaHTML += "<li style = 'color:green;'>" + funcionarios[funcionarioAtual] + "</li>"}
+    // Determina qual funcionário está de plantão no dia atual
+    
+    var inicioPlantao = new Date(dataInicio.getTime() + (i * milisegundosDia));
+    var fimPlantao = new Date(inicioPlantao.getTime() + diasPlantao * milisegundosDia);
+    var fimFolga = new Date(fimPlantao.getTime() + diasFolga * milisegundosDia);
+    
+    escalaHTML += "<li>Dia " + (i + 1) + ":<br>";
+    escalaHTML += funcionarios[funcionarioAtual] + ": Plantão de " + inicioPlantao.toLocaleDateString('pt-BR') + " a " + fimPlantao.toLocaleDateString('pt-BR') + "<br>";
+  }
+  
+  escalaHTML += "</ul>";
+  document.getElementById("escala").innerHTML = escalaHTML;
+}
+</script>
+</body>
+</html>
