@@ -25,4 +25,4 @@ Os dados das tarefas são armazenados no **localStorage**, garantindo que a list
    git clone https://github.com/seu-usuario/todo-list.git
 ## Imagem de Exemplo
 Veja abaixo a imagem do funcionamento da aplicação:
-![Funcionamento da To-Do List](./imagens/todolist_exemplo.png)
+![Funcionamento da To-Do List](https://github.com/IvanM4rtin5/To-do-List/blob/main/Lista/imagen/LISTA%20DE%20TAREFAS%20-%20Google%20Chrome%2002_02_2025%2014_40_41.png)
