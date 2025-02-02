@@ -1,8 +1,8 @@
-# To-Do List
+# 📝To-Do List
 
 Este projeto é uma aplicação simples de **Lista de Tarefas** (To-Do List), desenvolvida com **HTML**, **CSS** e **JavaScript**. A aplicação permite adicionar, marcar como concluída e excluir tarefas, e armazena os dados localmente no navegador, utilizando o **localStorage**.
 
-## Como funciona
+## ⚙️ Como funciona
 
 A lista de tarefas permite ao usuário:
 
@@ -12,7 +12,7 @@ A lista de tarefas permite ao usuário:
 
 Os dados das tarefas são armazenados no **localStorage**, garantindo que a lista persista mesmo após o fechamento do navegador.
 
-## Tecnologias utilizadas
+## 💻 Tecnologias utilizadas
 
 - **HTML**: Estrutura da página.
 - **CSS**: Estilos e layout da aplicação.
@@ -24,5 +24,11 @@ Os dados das tarefas são armazenados no **localStorage**, garantindo que a list
    ```bash
    git clone https://github.com/seu-usuario/todo-list.git
 ## Imagem de Exemplo
-Veja abaixo a imagem do funcionamento da aplicação:
+- 📸 Veja abaixo a imagem do funcionamento da aplicação:
+
+
 ![Funcionamento da To-Do List](https://github.com/IvanM4rtin5/To-do-List/blob/main/Lista/imagen/LISTA%20DE%20TAREFAS%20-%20Google%20Chrome%2002_02_2025%2014_40_41.png)
+
+## 🤝 Contribuições
+
+Sinta-se à vontade para contribuir com este projeto. Para isso, basta fazer um fork deste repositório, fazer suas alterações e abrir um **pull request**.
