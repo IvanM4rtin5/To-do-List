@@ -22,7 +22,7 @@ Os dados das tarefas são armazenados no **localStorage**, garantindo que a list
 
 1. Clone este repositório para sua máquina local:
    ```bash
-   git clone https://github.com/seu-usuario/todo-list.git
+   git clone https://github.com/IvanM4rtin5/todo-list.git
 ## Imagem de Exemplo
 - 📸 Veja abaixo a imagem do funcionamento da aplicação:
 
